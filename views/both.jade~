@@ -1,0 +1,12 @@
+extends layout
+
+block content
+  h1 Life Expectancy from Countries
+  body
+    table(border='1', style='width: 300px;')
+      tr
+        td BothSchema.Country
+        td 'Life1990'
+        td 'Life2000'
+        td 'Life2006'
+

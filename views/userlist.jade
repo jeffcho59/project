@@ -1,0 +1,16 @@
+extends layout
+
+block content
+  h1 Life Expectancy from Countries (Both Genders)
+  body
+    table(border='1', style='width: px;')
+      tr
+        td Country
+        td Life Expectancy at 1990
+        td Life Expectancy at 2000
+        td Life Expectancy at 2006
+
+    ul
+        each user, i in userlist
+            li
+                a(href="mailto:#{user.email}")= user.username

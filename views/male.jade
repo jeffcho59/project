@@ -1,0 +1,19 @@
+extends layout
+
+block content
+  h1 Life Expectancy from Countries (Male)
+  body
+    table(border='1', style='width: px;')
+      tr
+        td Location
+        td Life Expectancy at 1990
+        td Life Expectancy at 2000
+        td Life Expectancy at 2006
+      tr
+      each life, i in male
+        td= life.Location
+        td= life.LifeMale1990
+        td= life.LifeMale2000
+        td= life.LifeMale2006
+        tr
+        
