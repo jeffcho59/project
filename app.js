@@ -7,11 +7,13 @@ var express = require('express'),
    csv = require('csv'),
    path = require('path');
 var mongo = require('mongodb');
+var mongood = require('mongoose');
 var monk = require('monk');
 var records = new Array();
 var app = express();
 var records = [];
 var db = monk('localhost:27017/project');
+//var db = mongoose.connect('mongodb://localhost:27017/project');
 csv(records)
    .from.stream(fs.createReadStream(__dirname + '/life.csv'), {
    columns: true
